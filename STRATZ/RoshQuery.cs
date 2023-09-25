@@ -11,10 +11,8 @@ using Newtonsoft.Json;
 
 namespace STRATZ
 {
-    public partial class MatchPlayerStatsChatWheelEventType
+    public partial class RoshQuery
     {
-        public int? Time { get; set; }
-        public short? ChatWheelId { get; set; }
-        public int? PauseTick { get; set; }
+        public IList<RoshGlobalStatType> Stats { get; set; }
     }
 }

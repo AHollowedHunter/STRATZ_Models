@@ -13,7 +13,7 @@ namespace STRATZ
 {
     public partial class PlayerPerformancePositionType
     {
-        public byte? RoleType { get; set; }
+        public MatchPlayerRoleType? RoleType { get; set; }
         public int? RoleMatchCount { get; set; }
         public int? RoleWinCount { get; set; }
         public IList<PlayerPerformancePositionObjectType> Lanes { get; set; }

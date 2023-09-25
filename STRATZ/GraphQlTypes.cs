@@ -122,7 +122,6 @@ namespace STRATZ
         public const string CaptainJackIdentityApiApplicationType = "CaptainJackIdentityApiApplicationType";
         public const string CaptainJackIdentityPrivateProfileType = "CaptainJackIdentityPrivateProfileType";
         public const string CaptainJackIdentityPublicProfileType = "CaptainJackIdentityPublicProfileType";
-        public const string CaptainJackIdentityType = "CaptainJackIdentityType";
         public const string ClusterType = "ClusterType";
         public const string ConstantQuery = "ConstantQuery";
         public const string DeathDetailType = "DeathDetailType";
@@ -251,6 +250,7 @@ namespace STRATZ
         public const string MatchGroupByAssistsType = "MatchGroupByAssistsType";
         public const string MatchGroupByAwardType = "MatchGroupByAwardType";
         public const string MatchGroupByClusterType = "MatchGroupByClusterType";
+        public const string MatchGroupByDateDayHeroType = "MatchGroupByDateDayHeroType";
         public const string MatchGroupByDateDayType = "MatchGroupByDateDayType";
         public const string MatchGroupByDeathsType = "MatchGroupByDeathsType";
         public const string MatchGroupByDurationMinutesType = "MatchGroupByDurationMinutesType";
@@ -260,6 +260,7 @@ namespace STRATZ
         public const string MatchGroupByGoldPerMinuteType = "MatchGroupByGoldPerMinuteType";
         public const string MatchGroupByHeroPerformanceType = "MatchGroupByHeroPerformanceType";
         public const string MatchGroupByHeroType = "MatchGroupByHeroType";
+        public const string MatchGroupByHourType = "MatchGroupByHourType";
         public const string MatchGroupByIsIntentionalFeedingType = "MatchGroupByIsIntentionalFeedingType";
         public const string MatchGroupByIsLeagueType = "MatchGroupByIsLeagueType";
         public const string MatchGroupByIsLeaverType = "MatchGroupByIsLeaverType";
@@ -435,7 +436,10 @@ namespace STRATZ
         public const string RabbitQueueDetailType = "RabbitQueueDetailType";
         public const string RegionType = "RegionType";
         public const string RoleType = "RoleType";
+        public const string RoshCaptainJackIdentityStatDifficultyType = "ROSHCaptainJackIdentityStatDifficultyType";
+        public const string RoshGlobalStatType = "ROSHGlobalStatType";
         public const string RoshMutation = "ROSHMutation";
+        public const string RoshQuery = "RoshQuery";
         public const string SearchType = "SearchType";
         public const string SeriesType = "SeriesType";
         public const string ServerStatusType = "ServerStatusType";
@@ -505,6 +509,7 @@ namespace STRATZ
         public const string PlusDraftPlayerRequestType = "PlusDraftPlayerRequestType";
         public const string PlusDraftRequestType = "PlusDraftRequestType";
         public const string PlusPlayerHoverRequestType = "PlusPlayerHoverRequestType";
+        public const string RoshMatchesRequestType = "ROSHMatchesRequestType";
         public const string TeamMatchesRequestType = "TeamMatchesRequestType";
         public const string UpdateFollowerRequestType = "UpdateFollowerRequestType";
         public const string UpdateMatchReplayMatchUploadPlayerObjectType = "UpdateMatchReplayMatchUploadPlayerObjectType";
@@ -557,6 +562,7 @@ namespace STRATZ
                 { typeof(PlusDraftPlayerRequestType), "PlusDraftPlayerRequestType" },
                 { typeof(PlusDraftRequestType), "PlusDraftRequestType" },
                 { typeof(PlusPlayerHoverRequestType), "PlusPlayerHoverRequestType" },
+                { typeof(RoshMatchesRequestType), "ROSHMatchesRequestType" },
                 { typeof(TeamMatchesRequestType), "TeamMatchesRequestType" },
                 { typeof(UpdateFollowerRequestType), "UpdateFollowerRequestType" },
                 { typeof(UpdateMatchReplayMatchUploadPlayerObjectType), "UpdateMatchReplayMatchUploadPlayerObjectType" },

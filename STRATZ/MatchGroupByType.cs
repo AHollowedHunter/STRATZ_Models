@@ -51,14 +51,14 @@ namespace STRATZ
         public long? GameVersion { get; set; }
         public long? TeamId { get; set; }
         public TeamType Team { get; set; }
-        public long? HeroPeroformance { get; set; }
+        public MatchPlayerPositionType? Position { get; set; }
         public long? SteamAccountId { get; set; }
         public SteamAccountType SteamAccount { get; set; }
         public long? LeagueId { get; set; }
         public LeagueType League { get; set; }
-        public MatchPlayerPositionType? Position { get; set; }
         public long? DateDay { get; set; }
         public long? TotalKills { get; set; }
         public long? GoldPerMinute { get; set; }
+        public short? Hour { get; set; }
     }
 }

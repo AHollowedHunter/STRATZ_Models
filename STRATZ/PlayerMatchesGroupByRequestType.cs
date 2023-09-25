@@ -34,9 +34,13 @@ namespace STRATZ
         private InputPropertyInfo _positionIds;
         private InputPropertyInfo _awardIds;
         private InputPropertyInfo _isParty;
+        private InputPropertyInfo _isVictory;
+        private InputPropertyInfo _isRadiant;
         private InputPropertyInfo _hasAward;
         private InputPropertyInfo _withFriendSteamAccountIds;
+        private InputPropertyInfo _withEnemySteamAccountIds;
         private InputPropertyInfo _withFriendHeroIds;
+        private InputPropertyInfo _withEnemyHeroIds;
         private InputPropertyInfo _minGameVersionId;
         private InputPropertyInfo _maxGameVersionId;
         private InputPropertyInfo _playerList;
@@ -235,6 +239,24 @@ namespace STRATZ
         #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
         [JsonConverter(typeof(QueryBuilderParameterConverter<bool?>))]
         #endif
+        public QueryBuilderParameter<bool?> IsVictory
+        {
+            get { return (QueryBuilderParameter<bool?>)_isVictory.Value; }
+            set { _isVictory = new InputPropertyInfo { Name = "isVictory", Value = value }; }
+        }
+
+        #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
+        [JsonConverter(typeof(QueryBuilderParameterConverter<bool?>))]
+        #endif
+        public QueryBuilderParameter<bool?> IsRadiant
+        {
+            get { return (QueryBuilderParameter<bool?>)_isRadiant.Value; }
+            set { _isRadiant = new InputPropertyInfo { Name = "isRadiant", Value = value }; }
+        }
+
+        #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
+        [JsonConverter(typeof(QueryBuilderParameterConverter<bool?>))]
+        #endif
         public QueryBuilderParameter<bool?> HasAward
         {
             get { return (QueryBuilderParameter<bool?>)_hasAward.Value; }
@@ -251,12 +273,30 @@ namespace STRATZ
         }
 
         #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
+        [JsonConverter(typeof(QueryBuilderParameterConverter<IList<object>>))]
+        #endif
+        public QueryBuilderParameter<IList<object>> WithEnemySteamAccountIds
+        {
+            get { return (QueryBuilderParameter<IList<object>>)_withEnemySteamAccountIds.Value; }
+            set { _withEnemySteamAccountIds = new InputPropertyInfo { Name = "withEnemySteamAccountIds", Value = value }; }
+        }
+
+        #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
         [JsonConverter(typeof(QueryBuilderParameterConverter<IList<int>>))]
         #endif
         public QueryBuilderParameter<IList<int>> WithFriendHeroIds
         {
             get { return (QueryBuilderParameter<IList<int>>)_withFriendHeroIds.Value; }
             set { _withFriendHeroIds = new InputPropertyInfo { Name = "withFriendHeroIds", Value = value }; }
+        }
+
+        #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
+        [JsonConverter(typeof(QueryBuilderParameterConverter<IList<int>>))]
+        #endif
+        public QueryBuilderParameter<IList<int>> WithEnemyHeroIds
+        {
+            get { return (QueryBuilderParameter<IList<int>>)_withEnemyHeroIds.Value; }
+            set { _withEnemyHeroIds = new InputPropertyInfo { Name = "withEnemyHeroIds", Value = value }; }
         }
 
         #if !GRAPHQL_GENERATOR_DISABLE_NEWTONSOFT_JSON
@@ -327,9 +367,13 @@ namespace STRATZ
             if (_positionIds.Name != null) yield return _positionIds;
             if (_awardIds.Name != null) yield return _awardIds;
             if (_isParty.Name != null) yield return _isParty;
+            if (_isVictory.Name != null) yield return _isVictory;
+            if (_isRadiant.Name != null) yield return _isRadiant;
             if (_hasAward.Name != null) yield return _hasAward;
             if (_withFriendSteamAccountIds.Name != null) yield return _withFriendSteamAccountIds;
+            if (_withEnemySteamAccountIds.Name != null) yield return _withEnemySteamAccountIds;
             if (_withFriendHeroIds.Name != null) yield return _withFriendHeroIds;
+            if (_withEnemyHeroIds.Name != null) yield return _withEnemyHeroIds;
             if (_minGameVersionId.Name != null) yield return _minGameVersionId;
             if (_maxGameVersionId.Name != null) yield return _maxGameVersionId;
             if (_playerList.Name != null) yield return _playerList;

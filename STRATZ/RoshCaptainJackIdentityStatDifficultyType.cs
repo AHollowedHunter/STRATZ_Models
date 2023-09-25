@@ -11,10 +11,11 @@ using Newtonsoft.Json;
 
 namespace STRATZ
 {
-    public partial class MatchPlayerStatsChatWheelEventType
+    public partial class RoshCaptainJackIdentityStatDifficultyType
     {
-        public int? Time { get; set; }
-        public short? ChatWheelId { get; set; }
-        public int? PauseTick { get; set; }
+        public RoshDifficultyEnum? Difficulty { get; set; }
+        public int? MatchCount { get; set; }
+        public int? WinCount { get; set; }
+        public decimal? MaxScore { get; set; }
     }
 }

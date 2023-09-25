@@ -11,10 +11,9 @@ using Newtonsoft.Json;
 
 namespace STRATZ
 {
-    public partial class MatchGroupByHeroPerformanceType
+    public partial class MatchGroupByHourType
     {
-        public short? HeroId { get; set; }
-        public MatchPlayerPositionType? Position { get; set; }
+        public short? Hour { get; set; }
         public int? MatchCount { get; set; }
         public int? WinCount { get; set; }
         public int? AvgImp { get; set; }
